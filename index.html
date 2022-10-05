@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Code Quiz</title>
+</head>
+<body>
+    <nav class="top-bar">
+        <ul>
+            <li class="viewhighscore"><a href="#viewhighscore">View High Score</a></li>
+            <li>
+                <h3> Timer:</h3>
+                <div id="quiztimer">10</div>
+             </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="aboutquiz">
+            <h2 class="quiz-title"> Quiz Coding Challenge</h2>
+            <p id="quiz-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus assumenda rerum cum eos commodi dolore vitae veniam dolores qui suscipit, voluptatum asperiores illum, est odio porro harum officiis omnis eligendi!
+            </p>
+            <button id="startquiz"> Start Quiz</button>
+        </section>
+
+        <section class="quizquestions">
+            <h2 id="question"> Quiz Question 1</h2>
+            <div class="answers">
+                <button id="answer1" onClick="ans_click(this.id)"> Quiz Answer 1</button>
+                <button id="answer2" onClick="ans_click(this.id)">Quiz Answer 1</button>
+                <button id="answer3" onClick="ans_click(this.id)"> Quiz Answer 1</button>
+                <button id="answer4" onClick="ans_click(this.id)"> Quiz Answer 1</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="showresults">
+            CORRECT!
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
