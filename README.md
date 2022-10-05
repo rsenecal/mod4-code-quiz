@@ -7,6 +7,7 @@ This app runs on your browser, your phone, or your tablet.
 ### Dependencies
 
 * Web browser: 
+![codequiz](https://user-images.githubusercontent.com/50510/193974417-3b35da48-6a70-4200-8951-e54540ceb521.png)
 
 
 ## Authors
