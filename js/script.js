@@ -9,8 +9,8 @@ var results = document.getElementById("showresults");
 
 //DATA
 var quizDATA = {
-    "quizname" : "Module 4 Code Quiz",
-    "questions_answers" : [
+    "quizName" : "Module 4 Code Quiz",
+    "questionsAnswers" : [
         {
             "question" : "What's your first name",
             "answer" : "Paul1",
@@ -44,11 +44,11 @@ var quizDATA = {
     }
   
     function displayQA(){
-        question.textContent = quizDATA.questions_answers[0].question
-        quizAnswer1.textContent = quizDATA.questions_answers[0].options[0];
-        quizAnswer2.textContent = quizDATA.questions_answers[0].options[1];
-        quizAnswer3.textContent = quizDATA.questions_answers[0].options[2];
-        quizAnswer4.textContent = quizDATA.questions_answers[0].options[3];
+        question.textContent = quizDATA.questionsAnswers[0].question
+        quizAnswer1.textContent = quizDATA.questionsAnswers[0].options[0];
+        quizAnswer2.textContent = quizDATA.questionsAnswers[0].options[1];
+        quizAnswer3.textContent = quizDATA.questionsAnswers[0].options[2];
+        quizAnswer4.textContent = quizDATA.questionsAnswers[0].options[3];
     }
 
     // Get element ID when the user click
@@ -65,7 +65,7 @@ var quizDATA = {
     }
 
     function validateAnswer(userAnswer){
-        if (userAnswer === quizDATA.questions_answers[0].answer) {
+        if (userAnswer === quizDATA.questionsAnswers[0].answer) {
             console.log("CORRECT")
             results.textContent = "YES! YES! INCORRECT";
         } else {
@@ -84,4 +84,5 @@ var quizDATA = {
 startQuizBtn.addEventListener("click", function(event) {
     setAnsBtnStatus(false);
     startQuiz();
+    console.log("Length of quiz object; " + quizDATA.questionsAnswers.length);
 })
